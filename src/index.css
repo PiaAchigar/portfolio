@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #6366f1;
+  --secondary: #a855f7;
+  --dark-bg: #0a0a0c;
+  --card-bg: #16161a;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background-color: #0a0a0c;
+  color: #e5e7eb;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root { width: 100%; }
+
+.glow-card {
+  background: #16161a;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.glow-card:hover {
+  border-color: #6366f1;
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.2);
+}
+
+.tech-gradient-text {
+  background: linear-gradient(135deg, #818cf8 0%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-mesh {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(168, 85, 247, 0.15) 0px, transparent 50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.nav-glass {
+  background: rgba(10, 10, 12, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.input-tech {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: all 0.3s ease;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+}
+
+.input-tech:focus {
+  background: rgba(99, 102, 241, 0.05);
+  border-color: #6366f1;
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.15);
+  outline: none;
+}
+
+.input-tech::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}

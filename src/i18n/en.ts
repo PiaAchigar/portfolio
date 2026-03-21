@@ -1,0 +1,71 @@
+import type { Translations } from './es'
+
+export const en: Translations = {
+  nav: {
+    home: 'Home',
+    about: 'About',
+    skills: 'Skills',
+    experience: 'Experience',
+    projects: 'Projects',
+    contact: 'Contact',
+  },
+  hero: {
+    available: 'Available for projects',
+    title1: 'Building the future with',
+    title2: 'Code & Innovation',
+    description:
+      'FullStack Developer passionate about crafting captivating interfaces and innovative solutions that solve real-world problems.',
+    cta_contact: 'Contact me',
+    cta_projects: 'View Projects',
+  },
+  about: {
+    title: 'About Me',
+    subtitle: 'A developer passionate about code',
+    p1: 'I design captivating Frontend interfaces. My passion lies in creating innovative solutions that solve real-world problems.',
+    p2: 'I seek to work in a collaborative and dynamic team, where I can contribute to solid solutions both on the Frontend and Backend, satisfying client needs.',
+    p3: 'Committed to technical excellence and constant innovation.',
+    location: 'Liniers, CABA, Argentina',
+    education: 'Education',
+    courses: 'Courses',
+    languages: 'Languages',
+    edu_cyber: 'B.S. Cybersecurity — UP (ongoing)',
+    edu_systems: 'B.S. Information Systems — UNER (2007–2010)',
+    lang_english: 'English B1–B2 · Cambridge PET',
+  },
+  skills: {
+    title: 'Skills',
+    subtitle: 'Technologies and tools I use daily',
+    frontend: 'Frontend',
+    backend: 'Backend & DB',
+    tools: 'Tools',
+    automation: 'Automation & AI',
+  },
+  experience: {
+    title: 'Experience',
+    subtitle: 'My professional journey',
+  },
+  projects: {
+    title: 'Projects',
+    subtitle: 'Some things I built',
+    view: 'View project',
+    code: 'View code',
+    wip: 'In progress',
+  },
+  contact: {
+    title: 'Contact',
+    subtitle: 'Have a project in mind? Let\'s talk!',
+    name: 'Name',
+    phone: 'Phone',
+    message: 'Message',
+    send: 'Send message',
+    sending: 'Sending...',
+    success: 'Message sent! I\'ll be in touch shortly.',
+    error: 'Something went wrong. Please try again.',
+    name_ph: 'Your name',
+    phone_ph: 'Your phone',
+    message_ph: 'How can I help you?',
+  },
+  footer: {
+    rights: 'All rights reserved.',
+  },
+}
