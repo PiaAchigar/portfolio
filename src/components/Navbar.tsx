@@ -27,7 +27,7 @@ export default function Navbar() {
         <div className="flex justify-between h-20 items-center">
           {/* Logo */}
           <a href="#home" className="text-2xl font-bold text-white tracking-tighter">
-            PíaDev<span className="text-indigo-500">.</span>
+            piaDev<span className="text-indigo-500">.</span>
           </a>
 
           {/* Desktop nav */}
