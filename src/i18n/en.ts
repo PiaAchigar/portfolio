@@ -39,6 +39,7 @@ export const en: Translations = {
     backend: 'Backend & DB',
     tools: 'Tools',
     automation: 'Automation & AI',
+    devops:'DevOps & Cloud Services'
   },
   experience: {
     title: 'Experience',
