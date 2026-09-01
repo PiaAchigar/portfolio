@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Send, CheckCircle, AlertCircle, Mail, Github, Linkedin, Instagram } from 'lucide-react'
-import { supabase } from '../lib/supabase'
+// Fase 2: reactivar guardado en Supabase (tabla contact_messages)
+// import { supabase } from '../lib/supabase'
 import { useLang } from '../context/LanguageContext'
 import type { ContactForm } from '../types'
 
@@ -14,19 +15,20 @@ export default function Contact() {
     setStatus('sending')
 
     try {
-      // 1. Save to Supabase
-      const { error: dbError } = await supabase
-        .from('contact_messages')
-        .insert([{ name: form.name, phone: form.phone, message: form.message }])
+      // Fase 2: reactivar guardado en Supabase (tabla contact_messages)
+      // const { error: dbError } = await supabase
+      //   .from('contact_messages')
+      //   .insert([{ name: form.name, phone: form.phone, message: form.message }])
+      // if (dbError) throw dbError
 
-      if (dbError) throw dbError
-
-      // 2. Trigger Edge Function to send email
-      const { error: fnError } = await supabase.functions.invoke('send-contact-email', {
-        body: { name: form.name, phone: form.phone, message: form.message },
+      // Enviar email vía Vercel Function (Resend)
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: form.name, phone: form.phone, message: form.message }),
       })
 
-      if (fnError) throw fnError
+      if (!res.ok) throw new Error('Failed to send')
 
       setStatus('success')
       setForm({ name: '', phone: '', message: '' })
