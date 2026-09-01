@@ -67,6 +67,7 @@ export const es = {
   },
   footer: {
     rights: 'Todos los derechos reservados.',
+    download_cv: 'Descargar CV',
   },
 }
 

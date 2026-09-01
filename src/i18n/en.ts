@@ -69,5 +69,6 @@ export const en: Translations = {
   },
   footer: {
     rights: 'All rights reserved.',
+    download_cv: 'Download CV',
   },
 }

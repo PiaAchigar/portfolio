@@ -81,7 +81,7 @@ export default function Contact() {
                 { icon: <Github size={20} />, label: 'github.com/PiaAchigar', href: 'https://github.com/PiaAchigar' },
                 { icon: <Linkedin size={20} />, label: 'linkedin.com/in/pia-achigar', href: 'https://www.linkedin.com/in/pia-achigar/' },
                 { icon: <Instagram size={20} />, label: '@piadeveloper', href: 'https://www.instagram.com/piadeveloper/' },
-                { icon: <WhatsAppIcon size={20} />, label: 'whatsapp', href: 'https://wa.me/1530317884' },
+                { icon: <WhatsAppIcon size={20} />, label: 'whatsapp', href: 'https://wa.me/5491130317884' },
               ].map((item, i) => (
                 <a
                   key={i}
