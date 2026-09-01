@@ -9,8 +9,8 @@ export const es = {
   },
   hero: {
     available: 'Disponible para proyectos',
-    title1: 'Tu problema de negocio, resuelto en código.',
-    title2: 'Innovación para tu negocio.',
+    title1: 'Problemas de negocio, resueltos en código.',
+    title2: 'Innovación para negocios reales.',
     description:
       'Developer & Docente. Interfaces cautivadoras y soluciones innovadoras que resuelvan problemas del mundo real, con mucho amor.',
     cta_contact: 'Contactame',
@@ -63,6 +63,7 @@ export const es = {
     name_ph: 'Tu nombre',
     phone_ph: 'Tu teléfono',
     message_ph: '¿En qué puedo ayudarte?',
+    phone_error: 'Ingresá un teléfono válido.',
   },
   footer: {
     rights: 'Todos los derechos reservados.',

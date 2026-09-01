@@ -18,9 +18,9 @@ export default async function handler(req: Request) {
         Authorization: `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: 'Portfolio Contact <onboarding@resend.dev>',
+        from: 'Portfolio Pía <porfolioPia@resend.dev>',
         to: [TO_EMAIL],
-        subject: `Nuevo contacto desde tu portfolio — ${name}`,
+        subject: `Pia: Nuevo mensaje desde tu portfolio de: ${name}`,
         html: `
           <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
             <h2 style="color: #6366f1;">Nuevo mensaje desde tu portfolio</h2>

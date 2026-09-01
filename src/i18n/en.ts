@@ -11,8 +11,8 @@ export const en: Translations = {
   },
   hero: {
     available: 'Available for projects',
-    title1: 'Your business problem, solved in code.',
-    title2: 'Innovation for your business',
+    title1: 'Business problem, solved in code.',
+    title2: 'Innovation for real business',
     description:
       'Developer & Educator. Crafting captivating interfaces and innovative solutions for real-world problems — with a lot of love.',
     cta_contact: 'Contact me',
@@ -65,6 +65,7 @@ export const en: Translations = {
     name_ph: 'Your name',
     phone_ph: 'Your phone',
     message_ph: 'How can I help you?',
+    phone_error: 'Enter a valid phone number.',
   },
   footer: {
     rights: 'All rights reserved.',
