@@ -7,7 +7,75 @@ import { useLang } from '../context/LanguageContext'
 // Fallback local projects while Supabase is being set up
 const localProjects: Project[] = [
   {
-    id: '1',
+  id: '1',
+  title: 'Sistema central: migración BD (Access → Supabase), CRM, agenda, facturador, automatización WhatsApp con IA (OpenAI + n8n)',
+  description_es:
+    'Central Piubella es un sistema integral de gestión empresarial que centraliza operaciones de estética y pilates. Nació de la migración exitosa de una base de datos legacy (Access) hacia una arquitectura moderna en Supabase, eliminando limitaciones técnicas y escalabilidad.',
+  description_en:
+    'Central Piubella is a comprehensive business management system that centralizes operations for aesthetic and pilates studios. It emerged from a successful migration of a legacy database (Access) to a modern Supabase architecture, eliminating technical constraints and enabling scalability.',
+  image_url: '/centralPiubella.png',
+  live_url: 'https://central.piubellaesteticapilates.com.ar/',
+  tags: ["Cloudflare Workers", "Hono", "Drizzle ORM", "Hyperdrive", "PostgreSQL 16", "Docker", "Wrangler", "Supabase", "Supabase Auth (JWT/JWKS/ES256)","pgvector", "JWKS","React", "Vite", "TypeScript", "Node.js", "n8n", "OpenAI (embeddings), Claude (generación)", "RAG", "MercadoPago", "ARCA (AFIP)", "Cloudflare R2"],
+  wip: false,
+  order: 1,
+  github_url:'https://github.com/PiaAchigar/api-sistema-central'
+},
+{
+  id: '2',
+  title: 'SaaS CRM',
+  description_es:
+    'CRM especializado para equipos comerciales. Incluye dashboard intuitivo, gestión de contactos, pipeline visual, reportes analíticos y control de usuarios. Optimiza tu flujo de ventas.',
+  description_en:
+    'CRM built for sales teams. Features intuitive dashboard, contact management, visual pipeline, analytics reports, and user access control. Streamline your sales workflow.',
+  image_url: '/saas_crm_complexa.png',
+  live_url: 'https://crm.complexa.com.ar/',
+  tags: ['React', 'TypeScript', 'Node.js', 'Express', 'JWT', 'Vercel', 'Railway'],
+  wip: true,
+  order: 1,
+  github_url:'https://github.com/PiaAchigar/saas-crm'
+},
+{
+  id: '3',
+  title: 'Página PiuBella',
+  description_es:
+  'Página web de servicios con búsqueda inteligente potenciada por IA. Integra agenda de citas, catálogo de servicios y reservas online.',
+  description_en:
+  'Service website with AI-powered intelligent search. Integrates appointment scheduling, service catalog, and online booking.',
+  image_url: '/pag_web_piu.png',
+  live_url: 'https://www.piubellaesteticapilates.com.ar/',
+  tags: ['React', 'TypeScript', 'Node.js', 'Express', 'JWT', 'Vercel'],
+  wip: false,
+  order: 1,
+  github_url:'https://github.com/PiaAchigar/piubella_web'
+},
+{
+  id: '4',
+  title: 'Album',
+  description_es:
+  'Sistema colaborativo para eventos: invitados inician sesión y suben fotos en tiempo real que se proyectan en pantalla durante la fiesta. Las imágenes se guardan automáticamente para los anfitriones, creando un álbum digital compartido de la celebración.',
+  description_en:
+  'Collaborative event photo gallery: guests log in and upload photos in real-time, instantly displayed on-screen during the party. Images are automatically saved for hosts, creating a shared digital album of the celebration—combining entertainment with permanent memories.',
+  image_url: '/album.png',
+  live_url: 'https://www.album.com.ar/login',
+  tags: ['Cloudflare R2','React', 'TypeScript', 'Node.js', 'Express', 'JWT', 'Vercel'],
+  wip: false,
+  order: 1,
+  github_url:'https://github.com/PiaAchigar/album'
+},
+{
+  id: '5',
+  title: 'ChatBot IA con RAG',
+  description_es:
+    'ChatBot con OpenAI como Agent, alimentado por un RAG almacenado en Supabase. Automatización del flujo con n8n para respuestas inteligentes de WhatsApp.',
+  description_en:
+    'AI ChatBot using OpenAI as Agent, powered by a RAG stored in Supabase. n8n workflow automation for intelligent WhatsApp responses.',
+  image_url: '/flow_n8n_chatBot.png',
+  tags: ['OpenAI', 'Supabase', 'n8n', 'RAG', 'WhatsApp'],
+  wip: false,
+  order: 2,
+},
+    {
+    id: '6',
     title: 'E-commerce Rodyna',
     description_es:
       'Desarrollo integral de plataforma e-commerce para farmacia. Frontend con Vite.js, React y TypeScript. Backend con Node.js, Express y autenticación JWT. Deploy en Vercel.',
@@ -17,20 +85,23 @@ const localProjects: Project[] = [
     live_url: 'https://www.rodynafarmacias.com.ar',
     tags: ['React', 'TypeScript', 'Node.js', 'Express', 'JWT', 'Vercel'],
     wip: true,
-    order: 1,
+    order: 6,
   },
-  {
-    id: '2',
-    title: 'ChatBot IA con RAG',
+    {
+    id: '7',
+    title: 'QR Generator',
     description_es:
-      'ChatBot con OpenAI como Agent, alimentado por un RAG almacenado en Supabase. Automatización del flujo con n8n para respuestas inteligentes de WhatsApp.',
+      'Generador de códigos QR 100% local y sin límites. Alta calidad para impresión (300 DPI). Soporta WhatsApp, URLs, Google Maps, Instagram y Facebook.',
     description_en:
-      'AI ChatBot using OpenAI as Agent, powered by a RAG stored in Supabase. n8n workflow automation for intelligent WhatsApp responses.',
-    image_url: '/flow_n8n_chatBot.png',
-    tags: ['OpenAI', 'Supabase', 'n8n', 'RAG', 'WhatsApp'],
+      'QR code generator 100% local and unlimited. High quality for printing (300 DPI). Supports WhatsApp, URLs, Google Maps, Instagram, and Facebook.',
+    image_url: '/qr_generator.png',
+    live_url: 'https://qr-generator-by-pia.streamlit.app/',
+    tags: ['Python', 'Streamlit'],
     wip: false,
-    order: 2,
-  },
+    order: 7,
+    github_url:'https://github.com/PiaAchigar/qr_generator'
+  }
+  //
 ]
 
 export default function Projects() {

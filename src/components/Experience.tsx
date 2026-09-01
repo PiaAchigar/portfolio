@@ -17,11 +17,13 @@ const experiences: ExpItem[] = [
     role_es: 'Automatización & Full Stack',
     role_en: 'Automation & Full Stack',
     bullets_es: [
+      'Desarrollo de Sistema Central (ERP) completo con facturación AFIP, CRM avanzado para gestión de clientes, agenda inteligente y automatización WhatsApp potenciada con IA',
       'Migración de base de datos Microsoft Access a Supabase PostgreSQL.',
       'Confección de workflow de automatización de respuestas de WhatsApp con RAG en Supabase y Agent IA (OpenAI).',
       'Desarrollo de CRM conectado al workflow de n8n (self-hosted).',
     ],
     bullets_en: [
+      'ERP development, with AFIP invoicing, an advanced CRM for customer management, intelligent scheduling, and WhatsApp automation powered by AI.',
       'Database migration from Microsoft Access to Supabase PostgreSQL.',
       'WhatsApp auto-response workflow with RAG on Supabase and AI Agent (OpenAI).',
       'CRM development integrated with self-hosted n8n workflow.',
@@ -30,8 +32,8 @@ const experiences: ExpItem[] = [
   },
   {
     period: 'Jul 2025',
-    company: 'Freelance',
-    role_es: 'Desarrolladora Full Stack',
+    company: 'Desarrolladora Full Stack',
+    role_es: 'Freelance',
     role_en: 'Full Stack Developer',
     bullets_es: [
       'E-commerce Rodyna: Frontend con Vite.js, React, TypeScript. Backend con Node.js, Express y JWT. Deploy en Vercel. (www.rodynafarmacias.com.ar)',
@@ -44,7 +46,7 @@ const experiences: ExpItem[] = [
     tags: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'Vercel'],
   },
   {
-    period: 'Jun 2025 - Dic 2025',
+    period: 'Jun 2025 - Actualmente',
     company: 'ITBA',
     role_es: 'Docente Full Stack',
     role_en: 'Full Stack Instructor',

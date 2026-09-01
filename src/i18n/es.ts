@@ -37,6 +37,7 @@ export const es = {
     backend: 'Backend & DB',
     tools: 'Herramientas',
     automation: 'Automatización & IA',
+    devops:'DevOps & Cloud Services'
   },
   experience: {
     title: 'Experiencia',

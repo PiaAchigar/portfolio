@@ -9,7 +9,7 @@ const skillGroups = [
   {
     key: 'backend' as const,
     color: 'purple',
-    skills: ['Node.js', 'Express.js', 'Python', 'MongoDB', 'Supabase', 'PostgreSQL', 'JWT / Auth'],
+    skills: ['Node.js', 'Hono.js','Express.js', 'Python', 'MongoDB', 'Supabase', 'PostgreSQL', 'JWT / Auth', 'RLS (Row-Level Security)'],
   },
   {
     key: 'tools' as const,
@@ -19,7 +19,12 @@ const skillGroups = [
   {
     key: 'automation' as const,
     color: 'violet',
-    skills: ['n8n', 'Supabase RAG', 'OpenAI API', 'Workflows', 'CRM Integration'],
+    skills: ['n8n', 'Supabase RAG', 'pgvector','OpenAI API', 'Workflows', 'CRM Integration'],
+  },
+  {
+    key: 'devops' as const,
+    color: 'indigo',
+    skills: ['Wrangler', 'npm/pnpm', 'git','Cloudflare R2', 'Cloudflare Workers', 'Migraciones SQL versionadas', 'Encriptación AES-256-GCM'],
   },
 ]
 
@@ -58,6 +63,7 @@ export default function Skills() {
     backend: t.skills.backend,
     tools: t.skills.tools,
     automation: t.skills.automation,
+    devops: t.skills.devops,
   }
 
   return (

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Send, CheckCircle, AlertCircle, Mail, Github, Linkedin } from 'lucide-react'
+import { Send, CheckCircle, AlertCircle, Mail, Github, Linkedin, Instagram } from 'lucide-react'
 import { supabase } from '../lib/supabase'
 import { useLang } from '../context/LanguageContext'
 import type { ContactForm } from '../types'
@@ -60,6 +60,7 @@ export default function Contact() {
                 { icon: <Mail size={20} />, label: 'achigarpia@gmail.com', href: 'mailto:achigarpia@gmail.com' },
                 { icon: <Github size={20} />, label: 'github.com/PiaAchigar', href: 'https://github.com/PiaAchigar' },
                 { icon: <Linkedin size={20} />, label: 'linkedin.com/in/pia-achigar', href: 'https://www.linkedin.com/in/pia-achigar/' },
+                { icon: <Instagram size={20} />, label: '@piadeveloper', href: 'https://www.instagram.com/piadeveloper/' },
               ].map((item, i) => (
                 <a
                   key={i}
