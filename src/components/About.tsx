@@ -8,6 +8,7 @@ const courses = [
   'CoderHouse — Diseño UX/UI 2021–2022',
   'CoderHouse — Backend 2022',
   'UTN — Python 2023',
+  'DigitalHouse — Data Science 2024'
 ]
 
 export default function About() {
