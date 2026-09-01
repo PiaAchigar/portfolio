@@ -9,16 +9,16 @@ export const es = {
   },
   hero: {
     available: 'Disponible para proyectos',
-    title1: 'Construyendo el futuro con',
-    title2: 'Código e Innovación',
+    title1: 'Tu problema de negocio, resuelto en código.',
+    title2: 'Innovación para tu negocio.',
     description:
-      'Developer & Docente. Interfaces cautivadoras y soluciones innovadoras que resuelvan problemas del mundo real, mucho amor.',
+      'Developer & Docente. Interfaces cautivadoras y soluciones innovadoras que resuelvan problemas del mundo real, con mucho amor.',
     cta_contact: 'Contactame',
     cta_projects: 'Ver Proyectos',
   },
   about: {
     title: 'Sobre Mí',
-    subtitle: 'Desarollo interfacez faciles de usar para el cliente.',
+    subtitle: 'Desarrollo interfaces faciles de usar para el cliente.',
     p1: 'Diseño interfaces cautivadoras en el Frontend y robustas en su Backend. Mi pasión radica en la creación de soluciones innovadoras que resuelvan problemas del mundo real.',
     p2: 'Busco trabajar en un equipo colaborativo y dinámico, donde pueda contribuir al desarrollo de soluciones sólidas tanto en el Frontend como en el Backend, satisfaciendo las necesidades de los clientes.',
     p3: 'Comprometida con la excelencia técnica y la innovación constante.',

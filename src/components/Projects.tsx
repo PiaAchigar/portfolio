@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { ExternalLink, Github, Clock } from 'lucide-react'
-import { supabase } from '../lib/supabase'
+import { supabase, isSupabaseConfigured } from '../lib/supabase'
 import type { Project } from '../types'
 import { useLang } from '../context/LanguageContext'
 
@@ -109,6 +109,8 @@ export default function Projects() {
   const [projects, setProjects] = useState<Project[]>(localProjects)
 
   useEffect(() => {
+    if (!isSupabaseConfigured) return
+
     const fetchProjects = async () => {
       const { data, error } = await supabase
         .from('projects')

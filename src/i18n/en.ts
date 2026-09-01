@@ -11,8 +11,8 @@ export const en: Translations = {
   },
   hero: {
     available: 'Available for projects',
-    title1: 'Building the future with',
-    title2: 'Code & Innovation',
+    title1: 'Your business problem, solved in code.',
+    title2: 'Innovation for your business',
     description:
       'Developer & Educator. Crafting captivating interfaces and innovative solutions for real-world problems — with a lot of love.',
     cta_contact: 'Contact me',
