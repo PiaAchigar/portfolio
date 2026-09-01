@@ -12,14 +12,14 @@ export const es = {
     title1: 'Construyendo el futuro con',
     title2: 'Código e Innovación',
     description:
-      'FullStack Developer apasionada por crear interfaces cautivadoras y soluciones innovadoras que resuelvan problemas del mundo real.',
+      'Developer & Docente. Interfaces cautivadoras y soluciones innovadoras que resuelvan problemas del mundo real, mucho amor.',
     cta_contact: 'Contactame',
     cta_projects: 'Ver Proyectos',
   },
   about: {
     title: 'Sobre Mí',
-    subtitle: 'Una desarrolladora apasionada por el código',
-    p1: 'Diseño interfaces cautivadoras en el Frontend. Mi pasión radica en la creación de soluciones innovadoras que resuelvan problemas del mundo real.',
+    subtitle: 'Desarollo interfacez faciles de usar para el cliente.',
+    p1: 'Diseño interfaces cautivadoras en el Frontend y robustas en su Backend. Mi pasión radica en la creación de soluciones innovadoras que resuelvan problemas del mundo real.',
     p2: 'Busco trabajar en un equipo colaborativo y dinámico, donde pueda contribuir al desarrollo de soluciones sólidas tanto en el Frontend como en el Backend, satisfaciendo las necesidades de los clientes.',
     p3: 'Comprometida con la excelencia técnica y la innovación constante.',
     location: 'Liniers, CABA, Argentina',

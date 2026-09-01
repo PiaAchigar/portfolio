@@ -14,14 +14,14 @@ export const en: Translations = {
     title1: 'Building the future with',
     title2: 'Code & Innovation',
     description:
-      'FullStack Developer passionate about crafting captivating interfaces and innovative solutions that solve real-world problems.',
+      'Developer & Educator. Crafting captivating interfaces and innovative solutions for real-world problems — with a lot of love.',
     cta_contact: 'Contact me',
     cta_projects: 'View Projects',
   },
   about: {
     title: 'About Me',
-    subtitle: 'A developer passionate about code',
-    p1: 'I design captivating Frontend interfaces. My passion lies in creating innovative solutions that solve real-world problems.',
+    subtitle: 'Building user-friendly interfaces for clients.',
+    p1: 'I design captivating Frontend interfaces and robust Backend systems. My passion lies in creating innovative solutions that solve real-world problems.',
     p2: 'I seek to work in a collaborative and dynamic team, where I can contribute to solid solutions both on the Frontend and Backend, satisfying client needs.',
     p3: 'Committed to technical excellence and constant innovation.',
     location: 'Liniers, CABA, Argentina',
