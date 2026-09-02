@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react'
+import { createContext, useContext, useState, useEffect } from 'react'
 import type { ReactNode } from 'react'
 import { es } from '../i18n/es'
 import type { Translations } from '../i18n/es'
@@ -18,6 +18,10 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const [lang, setLang] = useState<Lang>('es')
   const t = lang === 'es' ? es : en
   const toggleLang = () => setLang(prev => (prev === 'es' ? 'en' : 'es'))
+
+  useEffect(() => {
+    document.documentElement.lang = lang
+  }, [lang])
 
   return (
     <LanguageContext.Provider value={{ lang, t, toggleLang }}>
