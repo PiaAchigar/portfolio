@@ -38,10 +38,11 @@ async function main() {
     detached: true,
   })
 
+  let browser
   try {
     await waitForServer(URL)
 
-    const browser = await puppeteer.launch({
+    browser = await puppeteer.launch({
       headless: 'new',
       args: ['--no-sandbox', '--disable-setuid-sandbox'],
     })
@@ -52,9 +53,13 @@ async function main() {
     const html = await page.evaluate(() => document.documentElement.outerHTML)
     writeFileSync(distIndexPath, `<!doctype html>\n${html}\n`)
 
-    await browser.close()
     console.log('Prerender OK: dist/index.html actualizado con HTML renderizado')
   } finally {
+    // Cover every exit path (success or thrown error): close the browser
+    // Puppeteer spawned, and kill the preview server's whole process group
+    // (see comment above — npx's actual vite server is a child process, not
+    // `preview` itself, so `preview.kill()` alone can leave it orphaned).
+    await browser?.close()
     if (preview.pid) {
       try {
         process.kill(-preview.pid, 'SIGTERM')
@@ -66,6 +71,13 @@ async function main() {
 }
 
 main().catch(err => {
-  console.error('Prerender falló:', err)
-  process.exit(1)
+  // Prerendering is an enhancement, not a build requirement: `vite build`
+  // already produced a valid, functional dist/index.html (just without the
+  // prerendered DOM). If Puppeteer/Chromium can't launch here — e.g. a
+  // deploy container missing shared libs like libnss3.so — we must not fail
+  // the whole build/deploy over it. Log a clear warning and leave the
+  // vite-build output untouched (this script never deletes dist/index.html
+  // itself; it's only overwritten on the success path above).
+  console.warn(`⚠ Prerender falló, se conserva el dist/index.html sin prerenderizar: ${err.message}`)
+  process.exit(0)
 })
