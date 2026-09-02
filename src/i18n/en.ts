@@ -22,6 +22,7 @@ export const en: Translations = {
       'Developer & Educator. Crafting captivating interfaces and innovative solutions for real-world problems — with a lot of love.',
     cta_contact: 'Contact me',
     cta_projects: 'View Projects',
+    photo_alt: 'María Pía Achigar, Full Stack Developer — profile photo',
   },
   about: {
     title: 'About Me',
@@ -36,6 +37,7 @@ export const en: Translations = {
     edu_cyber: 'B.S. Cybersecurity — UP (ongoing)',
     edu_systems: 'B.S. Information Systems — UNER (2007–2010)',
     lang_english: 'English B1–B2 · Cambridge PET',
+    photo_alt: 'María Pía Achigar working as a frontend developer',
   },
   skills: {
     title: 'Skills',
@@ -56,6 +58,7 @@ export const en: Translations = {
     view: 'View project',
     code: 'View code',
     wip: 'In progress',
+    screenshot_alt: 'project screenshot',
   },
   contact: {
     title: 'Contact',

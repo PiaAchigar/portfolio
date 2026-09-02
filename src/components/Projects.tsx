@@ -160,7 +160,7 @@ export default function Projects() {
                   />
                   <img
                     src={project.image_url}
-                    alt={project.title}
+                    alt={`${project.title} — ${t.projects.screenshot_alt}`}
                     width={project.width}
                     height={project.height}
                     loading="lazy"

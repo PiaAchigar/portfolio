@@ -20,6 +20,7 @@ export const es = {
       'Developer & Docente. Interfaces cautivadoras y soluciones innovadoras que resuelvan problemas del mundo real, con mucho amor.',
     cta_contact: 'Contactame',
     cta_projects: 'Ver Proyectos',
+    photo_alt: 'María Pía Achigar, Full Stack Developer — foto de perfil',
   },
   about: {
     title: 'Sobre Mí',
@@ -34,6 +35,7 @@ export const es = {
     edu_cyber: 'Lic. en Ciberseguridad — UP (cursando)',
     edu_systems: 'Lic. en Sistemas — UNER (2007–2010)',
     lang_english: 'Inglés B1–B2 · Cambridge PET',
+    photo_alt: 'María Pía Achigar trabajando como desarrolladora frontend',
   },
   skills: {
     title: 'Habilidades',
@@ -54,6 +56,7 @@ export const es = {
     view: 'Ver proyecto',
     code: 'Ver código',
     wip: 'En proceso',
+    screenshot_alt: 'captura de pantalla del proyecto',
   },
   contact: {
     title: 'Contacto',

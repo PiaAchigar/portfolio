@@ -75,7 +75,7 @@ export default function Hero() {
                   <source srcSet="/pia.webp" type="image/webp" />
                   <img
                     src="/pia.jpeg"
-                    alt="María Pía Achigar"
+                    alt={t.hero.photo_alt}
                     width={800}
                     height={800}
                     loading="eager"

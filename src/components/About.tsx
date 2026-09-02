@@ -35,7 +35,7 @@ export default function About() {
                 <source srcSet="/piaDev.webp" type="image/webp" />
                 <img
                   src="/piaDev.jpeg"
-                  alt="Pía trabajando"
+                  alt={t.about.photo_alt}
                   width={2560}
                   height={1440}
                   loading="lazy"
