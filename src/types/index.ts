@@ -9,6 +9,8 @@ export interface Project {
   tags: string[]
   wip: boolean
   order: number
+  width?: number
+  height?: number
 }
 
 export interface ContactForm {

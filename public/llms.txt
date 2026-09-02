@@ -1,0 +1,52 @@
+# María Pía Achigar
+
+> Full Stack Developer & Docente, especializada en React, TypeScript, Node.js y Supabase. Buenos Aires, Argentina.
+
+María Pía Achigar es una desarrolladora Full Stack enfocada en interfaces de usuario cautivadoras y soluciones backend robustas. Combina desarrollo frontend (React, TypeScript, Tailwind CSS) con backend (Node.js, Express, Supabase/PostgreSQL) y automatización con IA (OpenAI, n8n, RAG).
+
+## Sobre mí
+- Ubicación: Liniers, CABA, Argentina
+- Educación: Lic. en Ciberseguridad — UP (cursando); Lic. en Sistemas — UNER (2007–2010)
+- Idiomas: Español (nativo), Inglés B1–B2 (Cambridge PET)
+
+## Stack técnico
+Frontend: React, TypeScript, Vite, Tailwind CSS
+Backend: Node.js, Express, Supabase (PostgreSQL), JWT
+Automatización & IA: OpenAI, n8n, RAG (Retrieval-Augmented Generation), pgvector
+DevOps: Vercel, Docker, Cloudflare Workers
+
+## Proyectos destacados
+- E-commerce Rodyna: plataforma e-commerce para farmacia (React, TypeScript, Node.js, Express, JWT). https://www.rodynafarmacias.com.ar
+- ChatBot IA con RAG: chatbot con OpenAI como Agent, alimentado por RAG en Supabase, automatizado con n8n para WhatsApp.
+- Sistema Central Piubella: sistema integral de gestión (CRM, agenda, facturación) migrado de Access a Supabase, con automatización de WhatsApp vía IA.
+
+## Contacto
+- Email: achigarpia@gmail.com
+- LinkedIn: https://www.linkedin.com/in/pia-achigar/
+- GitHub: https://github.com/PiaAchigar
+- Sitio: https://portfolio-piadev.vercel.app/
+
+---
+
+# María Pía Achigar (English)
+
+> Full Stack Developer & Educator, specialized in React, TypeScript, Node.js and Supabase. Buenos Aires, Argentina.
+
+María Pía Achigar is a Full Stack developer focused on captivating user interfaces and robust backend solutions. She combines frontend development (React, TypeScript, Tailwind CSS) with backend (Node.js, Express, Supabase/PostgreSQL) and AI automation (OpenAI, n8n, RAG).
+
+## Tech stack
+Frontend: React, TypeScript, Vite, Tailwind CSS
+Backend: Node.js, Express, Supabase (PostgreSQL), JWT
+AI & Automation: OpenAI, n8n, RAG, pgvector
+DevOps: Vercel, Docker, Cloudflare Workers
+
+## Featured projects
+- Rodyna E-commerce: full-stack e-commerce platform for a pharmacy (React, TypeScript, Node.js, Express, JWT). https://www.rodynafarmacias.com.ar
+- AI ChatBot with RAG: chatbot using OpenAI as Agent, powered by a RAG stored in Supabase, automated with n8n for WhatsApp.
+- Central Piubella System: comprehensive business management system (CRM, scheduling, invoicing) migrated from Access to Supabase, with AI-driven WhatsApp automation.
+
+## Contact
+- Email: achigarpia@gmail.com
+- LinkedIn: https://www.linkedin.com/in/pia-achigar/
+- GitHub: https://github.com/PiaAchigar
+- Site: https://portfolio-piadev.vercel.app/
