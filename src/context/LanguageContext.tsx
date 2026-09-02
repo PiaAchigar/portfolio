@@ -23,6 +23,12 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     document.documentElement.lang = lang
   }, [lang])
 
+  useEffect(() => {
+    document.title = t.meta.title
+    const descriptionTag = document.querySelector('meta[name="description"]')
+    if (descriptionTag) descriptionTag.setAttribute('content', t.meta.description)
+  }, [t])
+
   return (
     <LanguageContext.Provider value={{ lang, t, toggleLang }}>
       {children}

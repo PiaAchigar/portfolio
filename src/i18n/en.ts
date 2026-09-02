@@ -1,6 +1,11 @@
 import type { Translations } from './es'
 
 export const en: Translations = {
+  meta: {
+    title: 'María Pía Achigar — Full Stack Developer & Educator',
+    description:
+      'María Pía Achigar — Full Stack Developer specialized in React, TypeScript and Node.js. Captivating interfaces and innovative solutions for real business problems.',
+  },
   nav: {
     home: 'Home',
     about: 'About',

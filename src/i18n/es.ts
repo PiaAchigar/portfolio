@@ -1,4 +1,9 @@
 export const es = {
+  meta: {
+    title: 'María Pía Achigar — Full Stack Developer & Docente',
+    description:
+      'María Pía Achigar — Full Stack Developer especializada en React, TypeScript y Node.js. Interfaces cautivadoras y soluciones innovadoras para problemas reales de negocio.',
+  },
   nav: {
     home: 'Inicio',
     about: 'Sobre Mí',
