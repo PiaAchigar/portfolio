@@ -29,8 +29,13 @@ function waitForServer(url, timeoutMs = 15000) {
 }
 
 async function main() {
+  // detached: true puts `preview` in its own process group so the `finally`
+  // block can kill the whole tree (npx's actual vite server runs as a child
+  // process, not `preview` itself — killing only `preview.pid` can leave it
+  // orphaned and holding the port on a subsequent run).
   const preview = spawn('npx', ['vite', 'preview', '--port', String(PORT), '--strictPort'], {
     stdio: 'inherit',
+    detached: true,
   })
 
   try {
@@ -50,7 +55,13 @@ async function main() {
     await browser.close()
     console.log('Prerender OK: dist/index.html actualizado con HTML renderizado')
   } finally {
-    preview.kill()
+    if (preview.pid) {
+      try {
+        process.kill(-preview.pid, 'SIGTERM')
+      } catch {
+        // process group may already be gone
+      }
+    }
   }
 }
 
