@@ -2,7 +2,7 @@
 
 Portfolio personal de María Pía Achigar, FullStack Developer. SPA con diseño dark mode, toggle de idioma ES/EN, proyectos consumidos desde Supabase y formulario de contacto con envío de email.
 
-🔗 <a href="https://portfolio-nu-lime-43.vercel.app/" target="_blank" rel="noopene
+🔗 <a href="https://portfolio-piadev.vercel.app/" target="_blank" rel="noopene
         +r noreferrer"><strong>Ver en producción</strong></a>   
 
 ---
