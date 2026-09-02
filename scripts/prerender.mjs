@@ -37,6 +37,13 @@ async function main() {
     stdio: 'inherit',
     detached: true,
   })
+  // Without a listener, a spawn failure (e.g. ENOENT if npx isn't on PATH,
+  // or EACCES) emits an unhandled 'error' event that crashes the process
+  // outside main()'s .catch(), bypassing the graceful-degradation design
+  // below. The actual failure path is already covered by waitForServer's
+  // timeout, which rejects and is caught normally — this listener only
+  // exists to prevent the unhandled event from crashing first.
+  preview.on('error', () => {})
 
   let browser
   try {
