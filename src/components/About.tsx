@@ -2,13 +2,13 @@ import { MapPin, GraduationCap, BookOpen, Globe } from 'lucide-react'
 import { useLang } from '../context/LanguageContext'
 
 const courses = [
-  'CoderHouse — Frontend 2020–2021',
-  'CoderHouse — Metodologías Ágiles 2020',
-  'CoderHouse — Community Manager 2021',
-  'CoderHouse — Diseño UX/UI 2021–2022',
-  'CoderHouse — Backend 2022',
+  'DigitalHouse — Data Science 2024',
   'UTN — Python 2023',
-  'DigitalHouse — Data Science 2024'
+  'CoderHouse — Backend 2022',
+  'CoderHouse — Diseño UX/UI 2021–2022',
+  'CoderHouse — Community Manager 2021',
+  'CoderHouse — Metodologías Ágiles 2020',
+  'CoderHouse — Frontend 2020–2021',
 ]
 
 export default function About() {

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import { ExternalLink, Github, Clock } from 'lucide-react'
+import { ExternalLink, Clock } from 'lucide-react'
+import { GithubIcon } from './icons'
 import { supabase, isSupabaseConfigured } from '../lib/supabase'
 import type { Project } from '../types'
 import { useLang } from '../context/LanguageContext'
@@ -192,7 +193,7 @@ export default function Projects() {
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 px-4 py-2 border border-white/10 text-gray-300 text-sm font-semibold rounded-full hover:border-indigo-500 hover:text-white transition-all"
                     >
-                      <Github size={14} />
+                      <GithubIcon size={14} />
                       {t.projects.code}
                     </a>
                   )}

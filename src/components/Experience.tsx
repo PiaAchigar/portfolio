@@ -1,3 +1,4 @@
+import { GithubIcon } from './icons'
 import { useLang } from '../context/LanguageContext'
 
 interface ExpItem {
@@ -8,6 +9,7 @@ interface ExpItem {
   bullets_es: string[]
   bullets_en: string[]
   tags: string[]
+  github_url?: string
 }
 
 const experiences: ExpItem[] = [
@@ -28,22 +30,7 @@ const experiences: ExpItem[] = [
       'WhatsApp auto-response workflow with RAG on Supabase and AI Agent (OpenAI).',
       'CRM development integrated with self-hosted n8n workflow.',
     ],
-    tags: ['n8n', 'Supabase', 'OpenAI', 'CRM'],
-  },
-  {
-    period: 'Jul 2025',
-    company: 'Desarrolladora Full Stack',
-    role_es: 'Freelance',
-    role_en: 'Full Stack Developer',
-    bullets_es: [
-      'E-commerce Rodyna: Frontend con Vite.js, React, TypeScript. Backend con Node.js, Express y JWT. Deploy en Vercel. (www.rodynafarmacias.com.ar)',
-      'Sistema de Gestión de Inventario Complexa: React.js, Chakra UI, Redux Toolkit, Node.js, Express, MongoDB. Principios SOLID.',
-    ],
-    bullets_en: [
-      'Rodyna E-commerce: Frontend with Vite.js, React, TypeScript. Backend with Node.js, Express and JWT. Deployed on Vercel. (www.rodynafarmacias.com.ar)',
-      'Complexa Inventory Management System: React.js, Chakra UI, Redux Toolkit, Node.js, Express, MongoDB. SOLID principles.',
-    ],
-    tags: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'Vercel'],
+    tags: ['Railway', 'Cloudflare','n8n', 'Supabase', 'OpenAI', 'CRM', 'GEO', 'Agents', 'Claud Code'],
   },
   {
     period: 'Jun 2025 - Actualmente',
@@ -58,7 +45,23 @@ const experiences: ExpItem[] = [
       'Full Stack development classes for ITBA students.',
       'Hands-on teaching of end-to-end E-commerce development from scratch.',
     ],
-    tags: ['React', 'Node.js', 'E-commerce', 'Full Stack'],
+    tags: ['MongoDB', 'Express', 'React', 'Node.js', 'JWT', 'OAuth', 'Cursor', 'Stitch'],
+    github_url: 'https://github.com/PiaAchigarITBA',
+  },
+  {
+    period: 'Jul 2025',
+    company: 'Desarrolladora Full Stack',
+    role_es: 'Freelance',
+    role_en: 'Full Stack Developer',
+    bullets_es: [
+      'E-commerce Rodyna: Frontend con Vite.js, React, TypeScript. Backend con Node.js, Express y JWT. Deploy en Vercel. (www.rodynafarmacias.com.ar)',
+      'Sistema de Gestión de Inventario Complexa: React.js, Chakra UI, Redux Toolkit, Node.js, Express, MongoDB. Principios SOLID.',
+    ],
+    bullets_en: [
+      'Rodyna E-commerce: Frontend with Vite.js, React, TypeScript. Backend with Node.js, Express and JWT. Deployed on Vercel. (www.rodynafarmacias.com.ar)',
+      'Complexa Inventory Management System: React.js, Chakra UI, Redux Toolkit, Node.js, Express, MongoDB. SOLID principles.',
+    ],
+    tags: ['React', 'TypeScript', 'Node.js', 'Supabase', 'Vercel'],
   },
   {
     period: 'Jul 2022 — Jun 2025',
@@ -114,7 +117,7 @@ const experiences: ExpItem[] = [
     company: 'GSOFT',
     role_es: 'Pasantía Desarrollo Web',
     role_en: 'Web Development Internship',
-    bullets_es: ['Maquetación y estilado. Trabajo en equipo.'],
+    bullets_es: ['Maquetación y estilado.','Trabajo en equipo.'],
     bullets_en: ['Layout and styling. Teamwork.'],
     tags: ['HTML', 'CSS'],
   },
@@ -181,7 +184,7 @@ export default function Experience() {
                         ))}
                       </ul>
 
-                      <div className="flex flex-wrap gap-2">
+                      <div className="flex flex-wrap items-center gap-2">
                         {exp.tags.map(tag => (
                           <span
                             key={tag}
@@ -190,6 +193,16 @@ export default function Experience() {
                             {tag}
                           </span>
                         ))}
+                        {exp.github_url && (
+                          <a
+                            href={exp.github_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="ml-auto text-gray-400 hover:text-indigo-400 transition-colors"
+                          >
+                            <GithubIcon size={18} />
+                          </a>
+                        )}
                       </div>
                     </div>
                   </div>

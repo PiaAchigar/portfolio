@@ -1,4 +1,5 @@
-import { Github, Linkedin, Instagram, Mail, Download } from 'lucide-react'
+import { Mail, Download } from 'lucide-react'
+import { GithubIcon, LinkedinIcon, InstagramIcon } from './icons'
 import { useLang } from '../context/LanguageContext'
 
 export default function Footer() {
@@ -29,9 +30,9 @@ export default function Footer() {
 
           <div className="flex items-center gap-5">
             {[
-              { href: 'https://github.com/PiaAchigar', icon: <Github size={18} /> },
-              { href: 'https://www.linkedin.com/in/pia-achigar/', icon: <Linkedin size={18} /> },
-              { href: 'https://www.instagram.com/piadeveloper/', icon: <Instagram size={18} /> },
+              { href: 'https://github.com/PiaAchigar', icon: <GithubIcon size={18} /> },
+              { href: 'https://www.linkedin.com/in/pia-achigar/', icon: <LinkedinIcon size={18} /> },
+              { href: 'https://www.instagram.com/piadeveloper/', icon: <InstagramIcon size={18} /> },
               { href: 'mailto:achigarpia@gmail.com', icon: <Mail size={18} /> },
             ].map((s, i) => (
               <a

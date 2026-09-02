@@ -1,4 +1,5 @@
-import { Github, Linkedin, Instagram, Mail, ChevronDown } from 'lucide-react'
+import { Mail, ChevronDown } from 'lucide-react'
+import { GithubIcon, LinkedinIcon, InstagramIcon } from './icons'
 import { useLang } from '../context/LanguageContext'
 
 export default function Hero() {
@@ -47,9 +48,9 @@ export default function Hero() {
             {/* Social links */}
             <div className="flex items-center gap-5 justify-center lg:justify-start">
               {[
-                { href: 'https://github.com/PiaAchigar', icon: <Github size={20} /> },
-                { href: 'https://www.linkedin.com/in/pia-achigar/', icon: <Linkedin size={20} /> },
-                { href: 'https://www.instagram.com/piadeveloper/', icon: <Instagram size={20} /> },
+                { href: 'https://github.com/PiaAchigar', icon: <GithubIcon size={20} /> },
+                { href: 'https://www.linkedin.com/in/pia-achigar/', icon: <LinkedinIcon size={20} /> },
+                { href: 'https://www.instagram.com/piadeveloper/', icon: <InstagramIcon size={20} /> },
                 { href: 'mailto:achigarpia@gmail.com', icon: <Mail size={20} /> },
               ].map((s, i) => (
                 <a
