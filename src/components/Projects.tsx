@@ -18,7 +18,9 @@ const localProjects: Project[] = [
   tags: ["Cloudflare Workers", "Hono", "Drizzle ORM", "Hyperdrive", "PostgreSQL 16", "Docker", "Wrangler", "Supabase", "Supabase Auth (JWT/JWKS/ES256)","pgvector", "JWKS","React", "Vite", "TypeScript", "Node.js", "n8n", "OpenAI (embeddings), Claude (generación)", "RAG", "MercadoPago", "ARCA (AFIP)", "Cloudflare R2"],
   wip: false,
   order: 1,
-  github_url:'https://github.com/PiaAchigar/api-sistema-central'
+  github_url:'https://github.com/PiaAchigar/api-sistema-central',
+  width: 1357,
+  height: 644,
 },
 {
   id: '2',
@@ -32,7 +34,9 @@ const localProjects: Project[] = [
   tags: ['React', 'TypeScript', 'Node.js', 'Express', 'JWT', 'Vercel', 'Railway'],
   wip: true,
   order: 1,
-  github_url:'https://github.com/PiaAchigar/saas-crm'
+  github_url:'https://github.com/PiaAchigar/saas-crm',
+  width: 1357,
+  height: 644,
 },
 {
   id: '3',
@@ -46,7 +50,9 @@ const localProjects: Project[] = [
   tags: ['React', 'TypeScript', 'Node.js', 'Express', 'JWT', 'Vercel'],
   wip: false,
   order: 1,
-  github_url:'https://github.com/PiaAchigar/piubella_web'
+  github_url:'https://github.com/PiaAchigar/piubella_web',
+  width: 1345,
+  height: 641,
 },
 {
   id: '4',
@@ -60,7 +66,9 @@ const localProjects: Project[] = [
   tags: ['Cloudflare R2','React', 'TypeScript', 'Node.js', 'Express', 'JWT', 'Vercel'],
   wip: false,
   order: 1,
-  github_url:'https://github.com/PiaAchigar/album'
+  github_url:'https://github.com/PiaAchigar/album',
+  width: 1345,
+  height: 641,
 },
 {
   id: '5',
@@ -73,6 +81,8 @@ const localProjects: Project[] = [
   tags: ['OpenAI', 'Supabase', 'n8n', 'RAG', 'WhatsApp'],
   wip: false,
   order: 2,
+  width: 1110,
+  height: 612,
 },
     {
     id: '6',
@@ -86,6 +96,8 @@ const localProjects: Project[] = [
     tags: ['React', 'TypeScript', 'Node.js', 'Express', 'JWT', 'Vercel'],
     wip: true,
     order: 6,
+    width: 1132,
+    height: 612,
   },
     {
     id: '7',
@@ -99,7 +111,9 @@ const localProjects: Project[] = [
     tags: ['Python', 'Streamlit'],
     wip: false,
     order: 7,
-    github_url:'https://github.com/PiaAchigar/qr_generator'
+    github_url:'https://github.com/PiaAchigar/qr_generator',
+    width: 1352,
+    height: 642,
   }
   //
 ]
@@ -142,6 +156,9 @@ export default function Projects() {
                 <img
                   src={project.image_url}
                   alt={project.title}
+                  width={project.width}
+                  height={project.height}
+                  loading="lazy"
                   className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#16161a] via-transparent to-transparent" />

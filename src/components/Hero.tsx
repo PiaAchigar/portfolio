@@ -74,6 +74,10 @@ export default function Hero() {
                 <img
                   src="/pia.jpeg"
                   alt="María Pía Achigar"
+                  width={800}
+                  height={800}
+                  loading="eager"
+                  fetchPriority="high"
                   className="w-full h-full object-cover"
                 />
               </div>
