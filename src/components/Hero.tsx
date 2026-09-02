@@ -71,15 +71,18 @@ export default function Hero() {
               {/* Glow ring */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-indigo-600 to-purple-600 blur-2xl opacity-30 scale-110" />
               <div className="relative w-full h-full rounded-full border-2 border-indigo-500/30 overflow-hidden shadow-2xl">
-                <img
-                  src="/pia.jpeg"
-                  alt="María Pía Achigar"
-                  width={800}
-                  height={800}
-                  loading="eager"
-                  fetchPriority="high"
-                  className="w-full h-full object-cover"
-                />
+                <picture>
+                  <source srcSet="/pia.webp" type="image/webp" />
+                  <img
+                    src="/pia.jpeg"
+                    alt="María Pía Achigar"
+                    width={800}
+                    height={800}
+                    loading="eager"
+                    fetchPriority="high"
+                    className="w-full h-full object-cover"
+                  />
+                </picture>
               </div>
             </div>
           </div>

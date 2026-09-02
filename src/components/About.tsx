@@ -31,14 +31,17 @@ export default function About() {
           {/* Left: photo + text */}
           <div className="space-y-6">
             <div className="relative rounded-2xl overflow-hidden">
-              <img
-                src="/piaDev.jpeg"
-                alt="Pía trabajando"
-                width={2560}
-                height={1440}
-                loading="lazy"
-                className="w-full h-72 object-cover object-top"
-              />
+              <picture>
+                <source srcSet="/piaDev.webp" type="image/webp" />
+                <img
+                  src="/piaDev.jpeg"
+                  alt="Pía trabajando"
+                  width={2560}
+                  height={1440}
+                  loading="lazy"
+                  className="w-full h-72 object-cover object-top"
+                />
+              </picture>
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0c] via-transparent to-transparent" />
             </div>
 

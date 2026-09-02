@@ -153,14 +153,20 @@ export default function Projects() {
             <div key={project.id} className="glow-card rounded-2xl overflow-hidden group">
               {/* Image */}
               <div className="relative h-52 overflow-hidden bg-[#0e0e12]">
-                <img
-                  src={project.image_url}
-                  alt={project.title}
-                  width={project.width}
-                  height={project.height}
-                  loading="lazy"
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                />
+                <picture>
+                  <source
+                    srcSet={project.image_url.replace(/\.(png|jpe?g)$/i, '.webp')}
+                    type="image/webp"
+                  />
+                  <img
+                    src={project.image_url}
+                    alt={project.title}
+                    width={project.width}
+                    height={project.height}
+                    loading="lazy"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  />
+                </picture>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#16161a] via-transparent to-transparent" />
                 {project.wip && (
                   <div className="absolute top-3 right-3 flex items-center gap-1.5 px-2.5 py-1 bg-amber-500/20 text-amber-300 text-xs font-bold rounded-full border border-amber-500/30">
