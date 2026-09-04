@@ -170,13 +170,24 @@ export default function Experience() {
                       {/* Mobile period */}
                       <span className="md:hidden text-indigo-400 text-xs font-mono block mb-1">{exp.period}</span>
 
-                      <div className="mb-3">
-                        <h3 className="text-white font-semibold text-lg" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                          {exp.company}
-                        </h3>
-                        <p className="text-gray-400 text-sm">{role}</p>
+                      <div className="mb-3 flex items-start justify-between gap-3">
+                        <div>
+                          <h3 className="text-white font-semibold text-lg" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                            {exp.company}
+                          </h3>
+                          <p className="text-gray-400 text-sm">{role}</p>
+                        </div>
+                        {exp.github_url && (
+                          <a
+                            href={exp.github_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex-shrink-0 text-gray-400 hover:text-indigo-400 transition-colors"
+                          >
+                            <GithubIcon size={24} />
+                          </a>
+                        )}
                       </div>
-
                       <ul className="space-y-2 mb-4">
                         {bullets.map((b, j) => (
                           <li key={j} className="text-gray-400 text-sm flex items-start gap-2">
@@ -195,16 +206,6 @@ export default function Experience() {
                             {tag}
                           </span>
                         ))}
-                        {exp.github_url && (
-                          <a
-                            href={exp.github_url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="ml-auto text-gray-400 hover:text-indigo-400 transition-colors"
-                          >
-                            <GithubIcon size={18} />
-                          </a>
-                        )}
                       </div>
                     </div>
                   </div>
