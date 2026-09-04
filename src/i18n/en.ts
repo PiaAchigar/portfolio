@@ -19,7 +19,7 @@ export const en: Translations = {
     title1: 'Business problem, solved in code.',
     title2: 'Innovation for real business',
     description:
-      'Developer & Educator. Crafting captivating interfaces and innovative solutions for real-world problems — with a lot of love.',
+      'Developer & Educator, María Pía Achigar. Crafting captivating interfaces and innovative solutions for real-world problems — with a lot of love.',
     cta_contact: 'Contact me',
     cta_projects: 'View Projects',
     photo_alt: 'María Pía Achigar, Full Stack Developer — profile photo',

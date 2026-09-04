@@ -17,7 +17,7 @@ export const es = {
     title1: 'Problemas de negocio, resueltos en código.',
     title2: 'Innovación para negocios reales.',
     description:
-      'Developer & Docente. Interfaces cautivadoras y soluciones innovadoras que resuelvan problemas del mundo real, con mucho amor.',
+      'Developer & Docente, María Pía Achigar. Interfaces cautivadoras y soluciones innovadoras que resuelvan problemas del mundo real, con mucho amor.',
     cta_contact: 'Contactame',
     cta_projects: 'Ver Proyectos',
     photo_alt: 'María Pía Achigar, Full Stack Developer — foto de perfil',

@@ -23,12 +23,14 @@ const experiences: ExpItem[] = [
       'Migración de base de datos Microsoft Access a Supabase PostgreSQL.',
       'Confección de workflow de automatización de respuestas de WhatsApp con RAG en Supabase y Agent IA (OpenAI).',
       'Desarrollo de CRM conectado al workflow de n8n (self-hosted).',
+      'Desarrollo de página web con buscador semántico basado en embeddings (búsqueda vectorial mediante pgvector).(www.piubellaesteticapilates.com.ar).'
     ],
     bullets_en: [
       'ERP development, with AFIP invoicing, an advanced CRM for customer management, intelligent scheduling, and WhatsApp automation powered by AI.',
       'Database migration from Microsoft Access to Supabase PostgreSQL.',
       'WhatsApp auto-response workflow with RAG on Supabase and AI Agent (OpenAI).',
       'CRM development integrated with self-hosted n8n workflow.',
+      'Web App development (https://www.piubellaesteticapilates.com.ar/)'
     ],
     tags: ['Railway', 'Cloudflare','n8n', 'Supabase', 'OpenAI', 'CRM', 'GEO', 'Agents', 'Claud Code'],
   },

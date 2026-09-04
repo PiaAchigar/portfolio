@@ -63,9 +63,6 @@ export default function Contact() {
 
           {/* Left: info */}
           <div className="space-y-8">
-            <p className="text-gray-400 text-lg leading-relaxed">
-              {t.contact.subtitle}
-            </p>
 
             <div className="space-y-4">
               {[
