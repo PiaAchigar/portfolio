@@ -63,7 +63,7 @@ const localProjects: Project[] = [
   description_en:
   'Collaborative event photo gallery: guests log in and upload photos in real-time, instantly displayed on-screen during the party. Images are automatically saved for hosts, creating a shared digital album of the celebration—combining entertainment with permanent memories.',
   image_url: '/album.png',
-  live_url: 'https://www.album.com.ar/login',
+  live_url: 'https://www.album.com.ar',
   tags: ['Cloudflare R2','React', 'TypeScript', 'Node.js', 'Express', 'JWT', 'Vercel'],
   wip: false,
   order: 1,
