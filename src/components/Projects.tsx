@@ -80,6 +80,7 @@ const localProjects: Project[] = [
 description_en:
   'Corporate website for Complexa IA, a company building custom software and AI solutions. Designed to scale: the next phase adds authentication and a private dashboard where each client can follow their project progress in real time.',
   image_url: '/complexa.png',
+  live_url: 'https://www.complexa.com.ar',
   tags: ['Stitch', 'Claude code', 'Next/TypeScript', 'Supabase'],
   wip: true,
   order: 2,
