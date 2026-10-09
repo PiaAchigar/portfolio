@@ -70,7 +70,7 @@ const localProjects: Project[] = [
   order: 1,
   github_url:'https://github.com/PiaAchigar/album',
   width: 1345,
-  height: 641,
+  height: 646,
 },
 {
   id: '5',
@@ -84,8 +84,8 @@ description_en:
   wip: true,
   order: 2,
   github_url:'https://github.com/complexa-ia/complexa_web',
-  width: 1110,
-  height: 612,
+  width: 1314,
+  height: 643,
 },
     {
     id: '6',
