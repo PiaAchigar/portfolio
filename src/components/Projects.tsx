@@ -7,6 +7,7 @@ import { useLang } from '../context/LanguageContext'
 
 // Fallback local projects while Supabase is being set up
 const localProjects: Project[] = [
+  //wip = Work in progress
   {
   id: '1',
   title: 'Sistema central: migración BD (Access → Supabase), CRM, agenda, facturador, automatización WhatsApp con IA (OpenAI + n8n)',
@@ -62,7 +63,7 @@ const localProjects: Project[] = [
   'Sistema colaborativo para eventos: invitados inician sesión y suben fotos en tiempo real que se proyectan en pantalla durante la fiesta. Las imágenes se guardan automáticamente para los anfitriones, creando un álbum digital compartido de la celebración.',
   description_en:
   'Collaborative event photo gallery: guests log in and upload photos in real-time, instantly displayed on-screen during the party. Images are automatically saved for hosts, creating a shared digital album of the celebration—combining entertainment with permanent memories.',
-  image_url: '/album.png',
+  image_url: '/album1.png',
   live_url: 'https://www.album.com.ar',
   tags: ['Cloudflare R2','React', 'TypeScript', 'Node.js', 'Express', 'JWT', 'Vercel'],
   wip: false,
@@ -73,15 +74,16 @@ const localProjects: Project[] = [
 },
 {
   id: '5',
-  title: 'ChatBot IA con RAG',
-  description_es:
-    'ChatBot con OpenAI como Agent, alimentado por un RAG almacenado en Supabase. Automatización del flujo con n8n para respuestas inteligentes de WhatsApp.',
-  description_en:
-    'AI ChatBot using OpenAI as Agent, powered by a RAG stored in Supabase. n8n workflow automation for intelligent WhatsApp responses.',
-  image_url: '/flow_n8n_chatBot.png',
-  tags: ['OpenAI', 'Supabase', 'n8n', 'RAG', 'WhatsApp'],
-  wip: false,
+  title: 'Complexa IA',
+ description_es:
+  'Sitio institucional de Complexa IA, empresa que desarrolla software a medida y soluciones con IA. Pensado para escalar: la próxima etapa suma login y un panel privado para que cada cliente siga el progreso de su proyecto en tiempo real.',
+description_en:
+  'Corporate website for Complexa IA, a company building custom software and AI solutions. Designed to scale: the next phase adds authentication and a private dashboard where each client can follow their project progress in real time.',
+  image_url: '/complexa.png',
+  tags: ['Stitch', 'Claude code', 'Next/TypeScript', 'Supabase'],
+  wip: true,
   order: 2,
+  github_url:'https://github.com/complexa-ia/complexa_web',
   width: 1110,
   height: 612,
 },
@@ -115,8 +117,22 @@ const localProjects: Project[] = [
     github_url:'https://github.com/PiaAchigar/qr_generator',
     width: 1352,
     height: 642,
-  }
-  //
+  },
+  {
+  id: '8',
+  title: 'ChatBot IA con RAG',
+  description_es:
+    'ChatBot con OpenAI como Agent, alimentado por un RAG almacenado en Supabase. Automatización del flujo con n8n para respuestas inteligentes de WhatsApp.',
+  description_en:
+    'AI ChatBot using OpenAI as Agent, powered by a RAG stored in Supabase. n8n workflow automation for intelligent WhatsApp responses.',
+  image_url: '/flow_n8n_chatBot.png',
+  tags: ['OpenAI', 'Supabase', 'n8n', 'RAG', 'WhatsApp'],
+  wip: false,
+  order: 2,
+  width: 1110,
+  height: 612,
+},
+
 ]
 
 export default function Projects() {
